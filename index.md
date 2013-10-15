@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Coding and Other Shenanigans 
+title: Writing Code and Other Shenanigans 
 tagline: 
 ---
 {% include JB/setup %}

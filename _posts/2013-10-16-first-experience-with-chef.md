@@ -48,9 +48,8 @@ So let's make it automatic with a simple ruby script (let's call it "getCookbook
     
     if ARGV.length == 2 then
       cookbook = "'" + v1 + "'"
-      path = "cookbooks/" + v2
-      success = system("echo \"depends " + cb + "\" >> " + path + "/metadata.rb")
-      success = system("echo \"include_recipe " + cb + "\" >> " + path + "/recipes/default.rb")
+      success = system("echo \"depends " + cb + "\" >> " + v2 + "/metadata.rb")
+      success = system("echo \"include_recipe " + cb + "\" >> " + v2 + "/recipes/default.rb")
     end
     puts "Successfully installed the \"" + v1 + "\" cookbook!"
   else

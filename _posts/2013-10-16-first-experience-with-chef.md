@@ -21,7 +21,7 @@ This is every single time you'd like to add a cookbook... Then you have to add "
 So let's make it automatic with a simple ruby script (let's call it "getCookbook.rb"). We can even make it a little flexible so if you need to include the community cookbook in your personal cookbook, it will add the necessary dependencies.
 
 {% highlight ruby %}
-  if ARGV.length >= 1 then
+  if ARGV.length >= 1 && ARGV.length < 3 then
     v1 = ARGV[0]
   else
     puts "Usage: ruby getCookbook.rb community_cookbook [your_cookbook]"

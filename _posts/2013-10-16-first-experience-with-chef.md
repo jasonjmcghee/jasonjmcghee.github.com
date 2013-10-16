@@ -18,7 +18,7 @@ For example, to install a new cookbook (say, apache) you have to type:
 {% endhighlight %}
 
 This is every single time you'd like to add a cookbook... Then you have to add "include\_recipe 'apache2'" to the default.rb in the recipes folder of your cookbook, then you have to add it to your cookbook's metadata.rb as a dependency! ugh.
-So let's make it automatic with a simple ruby script (let's call it "getCookbook.rb"). We can even make it a little flexible so if you want to include your personal cookbook, it will add the necessary dependencies.
+So let's make it automatic with a simple ruby script (let's call it "getCookbook.rb"). We can even make it a little flexible so if you need to include the community cookbook in your personal cookbook, it will add the necessary dependencies.
 
 {% highlight ruby %}
   if ARGV.length >= 1 then

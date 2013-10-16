@@ -66,5 +66,5 @@ Now you can just call it, and supply a cookbook name. It will either complain if
   Successfully installed the "apache2" cookbook!
 {% endhighlight %}
 
-Obviously this is a simple example, but it doesn't seem too ridiculous to suggest building a library of scripts where you could completely automate the process of setting up and using chef. 
-As I continue to explore Chef, I will explore other opportunites like this, in order to make my Chef experience more pleasureable.
+Obviously this is a simple example, but it doesn't seem too ridiculous to suggest building a library of scripts where you could completely automate the process of setting up and using Chef. 
+As I continue to learn and use it, I will explore other opportunites like this, in order to make my Chef experience more pleasureable.

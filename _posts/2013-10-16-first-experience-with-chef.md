@@ -47,9 +47,9 @@ So let's make it automatic with a simple ruby script (let's call it "getCookbook
       success = system("echo \"depends " + cb + "\" >> " + path + "/metadata.rb")
       success = system("echo \"include_recipe " + cb + "\" >> " + path + "/recipes/default.rb")
     end
-  puts "Successfully installed the \"" + v1 + "\" cookbook!"
+    puts "Successfully installed the \"" + v1 + "\" cookbook!"
   else
-  puts "The cookbook \"" + v1 + "\" does not exist!"
+    puts "The cookbook \"" + v1 + "\" does not exist!"
   end
 {% endhighlight %}
 
@@ -62,5 +62,5 @@ Now you can just call it, and supply a cookbook name. It will either complain if
   Successfully installed the "apache2" cookbook!
 {% endhighlight %}
 
-Obviously this is a simple example, but it doesn't seem to ridiculous to suggest building a library of scripts where you could completely automate the process of setting up and using chef. 
-As I continue to explore Chef, I will explore other opportunites like this to make simple scripts to make my life easier.
+Obviously this is a simple example, but it doesn't seem too ridiculous to suggest building a library of scripts where you could completely automate the process of setting up and using chef. 
+As I continue to explore Chef, I will explore other opportunites like this, in order to make my Chef experience more pleasureable.

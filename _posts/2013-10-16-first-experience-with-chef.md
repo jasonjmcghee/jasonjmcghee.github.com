@@ -23,6 +23,8 @@ So let's make it automatic with a simple ruby script (let's call it "getCookbook
 {% highlight ruby %}
   if ARGV.length >= 1 then
     v1 = ARGV[0]
+  else
+    puts "Usage: ruby getCookbook.rb community_cookbook [your_cookbook]"
   end
   
   if ARGV.length == 2 then
@@ -32,8 +34,6 @@ So let's make it automatic with a simple ruby script (let's call it "getCookbook
       puts "The cookbook \" + v2 + "\" you want to add \"" + v1 + "\" to doesn't exist!"
       exit
     end
-  else
-    puts "Usage: ruby getCookbook.rb community_cookbook [your_cookbook]"
   end
   
   location = system( "cd cookbooks")

@@ -36,6 +36,11 @@ So let's make it automatic with a simple ruby script (let's call it "getCookbook
     puts "Usage: ruby getCookbook.rb community_cookbook [your_cookbook]"
   end
   
+  location = system( "cd cookbooks")
+  if not location then
+    puts "Make sure to run from your server home directory."
+    exit
+  end
   success = system( "knife cookbook site download " + v1)
   if success then
     success = system( "tar zxf " + v1 + "*")

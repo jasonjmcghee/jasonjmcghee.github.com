@@ -36,7 +36,7 @@ So let's make it automatic with a simple ruby script (let's call it "getCookbook
   
   if ARGV.length == 2 then
     v2 = ARGV[1]
-    exists = system("cd " + v2 + " && cd")
+    exists = system("cd " + v2 + " && cd ..")
     if not exists then
       puts "The cookbook \" + v2 + "\" you want to add \"" + v1 + "\" to doesn't exist!"
       exit

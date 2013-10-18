@@ -21,7 +21,14 @@ This is every single time you'd like to add a cookbook... Then you have to add "
 So let's make it automatic with a simple ruby script (let's call it "getCookbook.rb"). We can even make it a little flexible so if you need to include the community cookbook in your personal cookbook, it will add the necessary dependencies.
 
 {% highlight ruby %}
-  if ARGV.length >= 1 && ARGV.length < 3 then
+
+  location = system( "cd cookbooks")
+  if not location then
+    puts "Make sure to run from your server home directory."
+    exit
+  end
+  
+  if ARGV.length >= 1 and ARGV.length < 3 then
     v1 = ARGV[0]
   else
     puts "Usage: ruby getCookbook.rb community_cookbook [your_cookbook]"
@@ -29,18 +36,13 @@ So let's make it automatic with a simple ruby script (let's call it "getCookbook
   
   if ARGV.length == 2 then
     v2 = ARGV[1]
-    exists = system("cd " + v2 + " && cd")
+    exists = system("cd " + v2 + " && cd ..")
     if not exists then
       puts "The cookbook \" + v2 + "\" you want to add \"" + v1 + "\" to doesn't exist!"
       exit
     end
   end
   
-  location = system( "cd cookbooks")
-  if not location then
-    puts "Make sure to run from your server home directory."
-    exit
-  end
   success = system( "knife cookbook site download " + v1)
   if success then
     success = system( "tar zxf " + v1 + "*")

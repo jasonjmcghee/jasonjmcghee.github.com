@@ -43,11 +43,26 @@ tags: []
     <div class="pcontent" style="display: none">
     <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;
       Personally, I've spent time learning SASS, which I find incredibly useful, Photoshop,
-      which is absolutely incredible for mockups and style guides, and a good amount of
-      JavaScript, which provides any developer with a whole lot of freedom in design and
-      especially interactivity.</p>
+      which is uncontested for building mockups and style guides, and JavaScript, along with
+      a number of libraries which provide developers with a whole lot of freedom in design and the
+      development of clean, interactive web applications. After everything, I find my design 
+      skills to be rather lacking and I'll continue to polish them in my own time and at future
+      internships, despite the informal nature which involves becoming competant in design.
+      </p>
     </div>
-    <div class="pcontent" style="display: none">Four
+    <div class="pcontent" style="display: none">
+    <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+      Each day I find myself realizing how much knowledge I have yet to acquire and it only
+      inspires me to strive to learn all that I can. I've now held jobs working on front-end
+      web development, back-end development, and development operations. Although I haven't
+      decided what my focus will be, (which I think is just fine, I haven't even graduated yet)
+      I understand the importance of great design and I'll be returning to working hard to 
+      build and polish my skills across the stack (as opposed to focusing primarily on the
+      back-end). Nothing would please me more than to be able to design a website or web
+      application which I would personally impress me (especially aesthetically). This was
+      a rather personal blog post- so I'll probably get back into the more technical aspects
+      of my pursuit of knowledge as time goes on.
+    </p>
     </div>
  
   </div>

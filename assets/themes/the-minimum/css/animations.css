@@ -1,0 +1,58 @@
+#ani_container {
+  margin: 0 auto;
+}
+
+.ani {
+  background: #007fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 10%;
+  transition-property: transform,background-color;
+  -webkit-transition-duration: 0.25s, 0.1s;
+  -moz-transition-duration: 0.25s, 0.1s;
+  transition-duration: 0.25s, 0.1s;
+  -webkit-transition-timing-function: ease-out;
+  -moz-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  -webkit-transform: scale(0.8) translate3d(0, 0, 0);
+  -moz-transform: scale(0.8) translate3d(0, 0, 0);
+  transform: scale(0.8) translate3d(0, 0, 0);
+  -webkit-transition-style: preserve-3d;
+  -moz-transition-style: preserve-3d;
+  transition-style: preserve-3d;
+  -webkit-transition-property: -webkit-transform,background-color;
+  -moz-transition-property: -moz-transform,color;
+  position: relative;
+}
+
+.ani:hover {
+  -webkit-transform: scale(1.5, 1.05) translate3d(10%, 0, 0);
+  -moz-transform: scale(1.5, 1.05) translate3d(10%, 0, 0);
+  transform: scale(1.5, 1.05) translate3d(10%, 0, 0);
+  background: #0055ff;
+}
+
+.ani:active {
+  -webkit-transition-duration: 0.25s, 0.1s;
+  -moz-transition-duration: 0.25s, 0.1s;
+  transition-duration: 0.25s, 0.1s;
+  background: #0032ff;
+}
+
+.ani.selected {
+  background: #000aff;
+}
+
+#my_content {
+  margin-top: -238px;
+  float: left;
+  display: inline;
+  margin-left: 100px;
+}
+#my_content div p {
+  font-size: 20px;
+}
+
+.main {
+  margin-bottom: 20px;
+}

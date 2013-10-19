@@ -5,7 +5,7 @@ tagline:
 ---
 {% include JB/setup %}
 
-This is my blog! It's brand new and still under construction, so a lot will change. (Mostly the front-end design)
+This is my blog! It's brand new and still under construction, so a lot will change. (Mostly the front-end design and the addition of blog posts)
 
 ### All Posts
 

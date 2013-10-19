@@ -1,0 +1,84 @@
+@mixin transition-duration($ease-durations) {
+  -webkit-transition-duration:$ease-durations;
+     -moz-transition-duration:$ease-durations;
+          transition-duration:$ease-durations;
+}
+
+@mixin transition-timing-function($ease-type) {
+  -webkit-transition-timing-function: $ease-type;
+     -moz-transition-timing-function: $ease-type;
+          transition-timing-function: $ease-type;
+}
+
+@mixin transition-style($style) {
+  -webkit-transition-style: $style;
+     -moz-transition-style: $style;
+          transition-style: $style;
+}
+
+@mixin transform($type) {
+  -webkit-transform: $type;
+     -moz-transform: $type;
+          transform: $type;
+}
+
+#ani_container {
+  margin: 0 auto;
+  //text-align: center;
+  //float: left;
+  //display:inline-block;
+}
+
+.ani {
+  background:rgba(0,127,255,1);
+  width:60px;
+  height:60px;
+  //margin-top:80px;
+  border-radius:10%;
+  //border: 5px solid #00f;
+  transition-property: transform,background-color;
+  @include transition-duration((0.25s, 0.1s));
+  @include transition-timing-function(ease-out);
+  @include transform(scale(0.8) translate3d(0,0,0));
+  @include transition-style(preserve-3d);
+  -webkit-transition-property: -webkit-transform,background-color;
+  -moz-transition-property: -moz-transform,color;    
+  //backface-visibility: visible;
+  //-webkit-backface-visibility: visible;
+  //-moz-backface-visibility: visible;
+  //display:inline-block;
+  position: relative;
+  //margin-left: -40px;
+}
+
+$button-scale: scale(1.5, 1.05);
+.ani:hover {
+  @include transform($button-scale translate3d(10%, 0,0));     
+  background:rgba(0,85,255,1);
+  //border: 5px solid #911;
+}
+
+.ani:active {
+  ///transition-property: transform,background-color;
+  //@include transform(translate3d(20%, 0,0));
+  @include transition-duration((0.25s, 0.1s));
+  background:rgb(0,50,255);
+}
+
+.ani.selected {
+  background:rgb(0,10,255);
+}
+
+#my_content {
+  margin-top:-238px;
+  float: left;
+  display:inline;
+  margin-left:100px;
+  div p {
+    font-size: 20px;
+  }
+}
+
+.main {
+  margin-bottom: 20px;
+}

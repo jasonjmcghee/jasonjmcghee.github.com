@@ -7,9 +7,9 @@ tags: ["chef"]
 ---
 {% include JB/setup %}
 
-I'll be honest, many aspects of development seem rather redundant. I'm considering building a layer of abstraction onto various aspects of Chef to make it more useful.
+Many aspects of setting up Chef seem rather redundant. I'm considering building a layer of abstraction to make it more useful.
 
-For example, to install a new cookbook (say, apache) you have to type:
+Let me show you an example. To install a new cookbook (say, apache) you have to do quite a bit:
 
 {% highlight bash %}
   root@local:# knife cookbook site download apache2
@@ -17,7 +17,7 @@ For example, to install a new cookbook (say, apache) you have to type:
   root@local:# rm apache2-1.8.4.tar.gz
 {% endhighlight %}
 
-This is every single time you'd like to add a cookbook... Then you have to add "include\_recipe 'apache2'" to the default.rb in the recipes folder of your cookbook, then you have to add it to your cookbook's metadata.rb as a dependency! ugh.
+Then you have to add "include\_recipe 'apache2'" to the default.rb in the recipes folder of your cookbook, then you have to add it to your cookbook's metadata.rb as a dependency. This process has to be completed for the majority of new cookbooks...  ugh.
 So let's make it automatic with a simple ruby script (let's call it "getCookbook.rb"). We can even make it a little flexible so if you need to include the community cookbook in your personal cookbook, it will add the necessary dependencies.
 
 {% highlight ruby %}

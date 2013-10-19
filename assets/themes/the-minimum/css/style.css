@@ -241,6 +241,7 @@ pre {
   color: #2d2d2d;
   margin-top: 0;
   margin-bottom: 0;
+  text-align: center;
 }
 .unit-article .entry-content h2,
 .unit-article .entry-content h3,
@@ -552,7 +553,7 @@ pre {
 .unit-article .entry-content,
 .unit-article .misc-content,
 .unit-article .unit-foot-inner {
-  width: 15em;
+  width: 18em;
   margin-left: auto;
   margin-right: auto;
 }
@@ -702,7 +703,7 @@ pre {
   .unit-article .entry-content,
   .unit-article .misc-content,
   .unit-article .unit-foot-inner {
-    width: 26.25em;
+    width: 30.25em;
   }
   .unit-article .unit-foot .gotop {
     margin-top: 1.625em;

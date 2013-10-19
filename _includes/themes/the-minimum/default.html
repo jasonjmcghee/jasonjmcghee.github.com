@@ -9,7 +9,24 @@
 	<title>{{ page.title }}</title>
 	<meta name="author" content="{{ site.author.name }}">
 	<link href='{{ ASSET_PATH }}/css/style.css' rel="stylesheet" media="all">
+  <link href='{{ ASSET_PATH }}/css/animations.css' rel="stylesheet" media="all">
+  
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script>
+  function select(elem) {
+    doms = $('.ani');
+    for (var i = 0; i < doms.length; i++) {   
+      $(doms[i]).removeClass('selected');
+      if (elem[0] == doms[i]) {
+        $($('#my_content div')[i]).show();
+      } else {
+        $($('#my_content div')[i]).hide();
+      }
+    }
+    $(elem[0]).addClass('selected');
+  }
+</script>
 </head>
 <body>
 

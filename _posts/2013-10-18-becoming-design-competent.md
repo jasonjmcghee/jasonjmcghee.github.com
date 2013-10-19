@@ -34,7 +34,7 @@ tags: []
       Even if it's directed towards developers (even if you're designing an API or a service
       to help develop an infrastructure) the attractiveness of the website or front-end,
       I can confidently say, will have a positive correlation with the success of the product.
-      By no means do I mean to claim design is any more important than the actual product or 
+      By no means do I claim design is any more important than the actual product or 
       service, but people respond to usability and beauty. It amazes me how few classes are
       offered at UCB, and other universities, which support learning how to design. I mean
       really design, not just how to write CSS and JS. As a result, students like me have 

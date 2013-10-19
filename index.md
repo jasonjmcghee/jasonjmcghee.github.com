@@ -5,7 +5,8 @@ tagline:
 ---
 {% include JB/setup %}
 
-This is my blog!
+#####Check back in a while if it's too ugly for you- I promise it will look beautiful soon enough!
+This is my blog! It's brand new and still under construction, so a lot will change. (Mostly the front-end design)
 
 ### All Posts
 

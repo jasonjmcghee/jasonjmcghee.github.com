@@ -58,8 +58,8 @@ tags: []
         decided what my focus will be, (which I think is just fine, I haven't even graduated yet)
         I understand the importance of great design and I'll be returning to working hard to 
         build and polish my skills across the stack (as opposed to focusing primarily on the
-        back-end). Nothing would please me more than to be able to design a website or web
-        application which I would personally impress me (especially aesthetically). This was
+        back-end). Nothing would please me more than to gain the ability to design a website or web
+        application which would personally impress me (especially aesthetically). This was
         a rather personal blog post- so I'll probably get back into the more technical aspects
         of my pursuit of knowledge as time goes on.
       </p>

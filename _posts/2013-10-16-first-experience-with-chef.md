@@ -62,7 +62,7 @@ So let's make it automatic with a simple ruby script (let's call it "getCookbook
 Now you can just call it, and supply a cookbook name. It will either complain if it doesn't exist or successfully download, extract the tarball, clean up and let you know about said success.
 
 {% highlight bash %}
-  root@local:# ruby getCookbook.rb apache2
+  root@local:# ruby getCookbook.rb apache2 my_cookbook
   ...
   ...
   Successfully installed the "apache2" cookbook!

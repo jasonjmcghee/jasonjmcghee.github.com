@@ -2,8 +2,8 @@
 layout: post
 title: "Becoming Design Competent"
 description: ""
-category: ""
-tags: []
+category: "Design"
+tags: ["design"]
 ---
 {% include JB/setup %}
 

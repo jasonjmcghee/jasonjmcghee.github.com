@@ -2,7 +2,7 @@
 layout: post
 title: "First experience with Chef"
 description: ""
-category: ""
+category: "DevOps"
 tags: ["chef"]
 ---
 {% include JB/setup %}

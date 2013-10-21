@@ -8,8 +8,7 @@ tags: ["chef"]
 {% include JB/setup %}
 
 Many aspects of setting up Chef seem rather redundant. I'm considering building a layer of abstraction to make it more useful.
-
-Let me show you an example. To install a new cookbook (say, apache) you have to do quite a bit:
+Let's look at an example. To install a new cookbook (say, apache) you have to do quite a bit:
 
 {% highlight bash %}
   root@local:# knife cookbook site download apache2

@@ -424,6 +424,14 @@ pre {
 .unit-article .unit-foot nav ul li {
   display: inline;
 }
+.unit-article .unit-foot .next {
+  text-align: right;
+  float: right;
+}
+.unit-article .unit-foot .prev {
+  text-align: left;
+  float: left;
+}
 .unit-article .unit-foot .gotop {
   margin-bottom: 0;
 }
@@ -781,9 +789,7 @@ pre {
     width: 37.5em;
   }
   .unit-article .unit-foot .gotop {
-    float: right;
     margin-top: 0;
-    text-align: right;
     width: 20.625em;
   }
   .layout-page .unit-body .unit-body-inner {

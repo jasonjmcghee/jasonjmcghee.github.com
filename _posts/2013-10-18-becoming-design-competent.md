@@ -30,7 +30,7 @@ tags: ["design"]
     </div>
     <div class="pcontent" style="display: none">
       <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;
-      This leads my to my next point: the presentation of the product, or service, is vital.
+      The presentation of the product, or service, is vital.
       Even if it's directed towards developers (even if you're designing an API or a service
       to help develop an infrastructure) the attractiveness of the website or front-end,
       I can confidently say, will have a positive correlation with the success of the product.
@@ -45,12 +45,9 @@ tags: ["design"]
     <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;
       Personally, I've spent time learning SASS, which I find incredibly useful, Photoshop,
       which is uncontested for building mockups and style guides, and JavaScript, along with
-      a number of libraries which provide developers with a whole lot of freedom in design and the
-      development of clean, interactive web applications. After everything, I find my design 
-      skills to be rather lacking. I know they'll improve with experience, but I'm getting
-      impatient! So I'll continue to polish them in my own time and at future internships, 
-      to the best of my ability, despite the informal nature which involves becoming competant 
-      in design.
+      a number of libraries which provide developers with freedom in design and the
+      development of clean, interactive web applications. Quite obviously, my design 
+      ability is rather lacking, so what do I know.
       </p>
     </div>
     <div class="pcontent" style="display: none">
